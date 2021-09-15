@@ -1,0 +1,27 @@
+{
+    "name": "Go-Develop-Environment",
+    "dockerComposeFile": [
+        "../docker-compose.yml",
+    ],
+    "service": "goenv",
+    "workspaceFolder": "/go/src/app",
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash",
+        "go.toolsManagement.checkForUpdates": "off",
+        "go.gopath": "/go",
+        "go.gocodeAutoBuild": true,
+        "go.formatTool": "gofmt",
+        "go.useLanguageServer": true,
+        "editor.formatOnSave": false,
+        "[go]": {
+            "editor.formatOnSave": true
+        }
+    },
+    "extensions": [
+        "file-icons.file-icons",
+        "golang.go",
+        "ms-azuretools.vscode-docker",
+        "MS-CEINTL.vscode-language-pack-ja",
+        "ms-vscode-remote.remote-containers",
+    ],
+}
