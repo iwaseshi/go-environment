@@ -1,0 +1,33 @@
+version: "3"
+services:
+  goenv:
+    container_name: "go_environment"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    tty: true
+    volumes:
+      - ./app:/go/src/app
+
+  db:
+    container_name: mysql
+    image: mysql:8.0
+    environment:
+      # MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      # MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: mackfc0822
+      MYSQL_DATABASE: go_database
+      MYSQL_USER: go_test
+      MYSQL_PASSWORD: p@55w0rd
+      TZ: 'Asia/Tokyo'
+    command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    volumes:
+      - db-data:/var/lib/mysql
+      - ./db/my.cnf:/etc/mysql/conf.d/my.cnf
+    ports:
+      - 3306:3306
+
+volumes:
+  db-data:
+    driver: local
