@@ -1,0 +1,9 @@
+{
+    "recommendations": [
+        "file-icons.file-icons",
+        "ms-azuretools.vscode-docker",
+        "ms-ceintl.vscode-language-pack-ja",
+        "ms-vscode-remote.remote-containers",
+        "formulahendry.vscode-mysql"
+    ]
+}
