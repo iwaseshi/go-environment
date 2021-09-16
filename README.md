@@ -92,7 +92,7 @@ cd  ~/development/environment/golang
 最後に本資源をcloneする。
 GitLab上の「クローン」を押下し、「HTTPSでクローン」の下部にあるURLをクリップボードにコピーする。
 
-![image-20210916153511602](/Users/atsuyaiwase/Library/Application Support/typora-user-images/image-20210916153511602.png)
+![image-20210916153511602](https://gitlab.com/poc-private-only/go-poc/environment/blob/assets/typora-user-images/image-20210916153511602.png)
 
 コピー後、ターミナル上で以下のコマンドを入力する。
 
