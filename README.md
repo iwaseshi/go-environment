@@ -149,8 +149,10 @@ go_enviromentを選択
 
 ![image-20210916155902167](https://gitlab.com/poc-private-only/go-poc/environment/-/raw/assets/typora-user-images/image-20210916155902167.png)
 
-VSCodeの新しいWindowが表示され、appディレクトリがカレントディレクトリとなっていることを確認する。　
-このappディレクトリの直下にgolangのコードを置くことで、コーディングした任意のgolangのプログラムを動かすことができる。　
+VSCodeの新しいWindowが表示され、appディレクトリがカレントディレクトリとなっていることを確認する。
+
+このappディレクトリの直下にgolangのコードを置くことで、コーディングした任意のgolangのプログラムを動かすことができる。
+
 以下のようになっていれば完了。
 
 ![image-20210916160119994](https://gitlab.com/poc-private-only/go-poc/environment/-/raw/assets/typora-user-images/image-20210916160119994.png)
@@ -168,6 +170,7 @@ VSCodeの新しいWindowが表示され、appディレクトリがカレント�
 ### アプリケーションの起動確認
 
 最後に本資源にあらかじめ同梱されているgoのプログラムを実行し、起動確認を行う。
+
 appディレクトリの直下で以下を入力する。（VSCode上のターミナルでの実行で問題ない）
 
 ```go
