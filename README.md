@@ -149,7 +149,11 @@ go_enviromentを選択
 
 ![image-20210916155902167](https://gitlab.com/poc-private-only/go-poc/environment/-/raw/assets/typora-user-images/image-20210916155902167.png)
 
-VSCodeの新しいWindowが表示され、以下のようなになっていれば完了。
+VSCodeの新しいWindowが表示され、appディレクトリがカレントディレクトリとなっていることを確認する。
+
+このappディレクトリの直下にGolangのコードを置くことで、コーディングした任意のGolangのプログラムを動かすことができる。
+
+以下のようになっていれば完了。
 
 ![image-20210916160119994](https://gitlab.com/poc-private-only/go-poc/environment/-/raw/assets/typora-user-images/image-20210916160119994.png)
 
@@ -165,21 +169,19 @@ VSCodeの新しいWindowが表示され、以下のようなになっていれ�
 
 ### アプリケーションの起動確認
 
-最後にVSCode側のターミナルで以下を入力する。
+最後に本資源にあらかじめ同梱されているGolangのプログラムを実行し、起動確認を行う。
+
+appディレクトリの直下で以下を入力する。（VSCode上のターミナルでの実行で問題ない）
 
 ```go
 go run main.go
 ```
 
-![image-20210916161304459](https://gitlab.com/poc-private-only/go-poc/environment/-/raw/assets/typora-user-images/image-20210916161304459.png)
+ターミナル上に、`Environment building completed!`と書かれたアスキーアートが表示されれば、環境構築完了。
 
-`Environment building completed!`と表示されれば、環境構築完了。
-以降はコンテナが起動していれば、[VSCodeを起動したコンテナとつなげる](https://gitlab.com/poc-private-only/go-poc/environment#vscode%E3%82%92%E8%B5%B7%E5%8B%95%E3%81%97%E3%81%9F%E3%82%B3%E3%83%B3%E3%83%86%E3%83%8A%E3%81%A8%E3%81%A4%E3%81%AA%E3%81%92%E3%82%8B)の手順のみで再び同環境を利用できます。
+また、コンテナが起動していれば、[VSCodeを起動したコンテナとつなげる](https://gitlab.com/poc-private-only/go-poc/environment#vscode%E3%82%92%E8%B5%B7%E5%8B%95%E3%81%97%E3%81%9F%E3%82%B3%E3%83%B3%E3%83%86%E3%83%8A%E3%81%A8%E3%81%A4%E3%81%AA%E3%81%92%E3%82%8B)の手順のみで再び同環境を利用できます。
 
 お疲れ様でした。
-
-※開発に使用するGolangのコードは、本リポジトリの/appの直下に配置する。（main.goがある場所。不要であればmain.goは削除して構わない）
-
 
 
 ## Appendix
