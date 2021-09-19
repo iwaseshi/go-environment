@@ -75,15 +75,15 @@ ${MYSQL_ROOT_PASSWORD}
 以下は作成例である。
 
 ```shell
-OS X   :  ~/development/environment/golang
-windows: C:/development/environment/golang
+OS X   :  ~/development/golang
+windows: C:/development/golang
 ```
 
 次にターミナル上で作成したフォルダに入る。
 上記例の場合は、golangフォルダを指す。
 
 ```shell
-cd  ~/development/environment/golang
+cd  ~/development/golang
 ```
 
 最後に本資源をcloneする。
