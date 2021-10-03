@@ -138,7 +138,7 @@ VSCodeを起動し、左下にある緑色の箇所を押下する。
 
 **ここ↑**
 
-次にAdd to Running Containerの選択
+次にAttach to Running Containerの選択
 
 ![image-20210916155821028](https://gitlab.com/poc-private-only/go-poc/environment/-/raw/assets/typora-user-images/image-20210916155821028.png)
 
