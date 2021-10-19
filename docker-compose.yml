@@ -17,7 +17,7 @@ services:
     volumes:
       - ./migrate:/migrate
     depends_on:
-      - database
+      - db
 
   db:
     container_name: mysql_container
