@@ -212,6 +212,10 @@ ports:
 
 ※ymlファイルの上記箇所を任意の値に変更することで、認証情報を任意の情報に変更できる。利用の際は変更を**強く推奨する。**
 
-また、本資源内でGolangのアプリケーションを実行する際に、mysqlのIPを指定する際にlocalhostを指定しても接続がうまく行かない場合がある。
+また、本資源内でGolangのアプリケーションを実行する際に、mysqlのIPを指定する際にlocalhostを指定しても接続がうまく行かないため、
 
-その場合は、[確認くん](https://www.ugtop.com/spill.shtml) や`curl ifconfig.io`等を使用し、自身のPCのグローバルIPを確認し、それを指定するとよい。
+docker-compose.yml内でdb.container_name箇所で宣言しているコンテナ名を使用する（本紀源での初期値はmysql_container）
+
+### Flywayの利用
+
+flyway_enviromentコンテナに入ることで、各種flywayコマンドが利用できる。
