@@ -1,0 +1,25 @@
+plugins {
+    id "java"
+    id "org.flywaydb.flyway" version "7.12.1"
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "org.flywaydb:flyway-core:7.12.1"
+    runtimeOnly 'mysql:mysql-connector-java:8.0.15'
+}
+
+flyway {
+    url = getProperty("${env()}.flyway.url") + "?&allowPublicKeyRetrieval=true&useSSL=false"
+    user = getProperty("${env()}.flyway.user")
+    password = getProperty("${env()}.flyway.password")
+    baselineVersion = "00.000.000"
+    locations = ['classpath:db/migration']
+}
+
+def env() {
+    project.hasProperty('env') ? project.properties['env'] : 'local'
+}
