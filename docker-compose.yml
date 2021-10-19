@@ -1,23 +1,23 @@
 version: "3"
 services:
-  goenv:
+  app:
     container_name: "go_environment"
     build:
       context: .
       dockerfile: ./app/docker/Dockerfile
     tty: true
     volumes:
-      - ./app:/go/src/app
+      - ./app:/go/app
 
   migrate:
     container_name: "flyway_environment"
     image: amazoncorretto:11
     tty: true
-    working_dir: /flyway
+    working_dir: /migrate
     volumes:
-      - ./flyway:/flyway
+      - ./migrate:/migrate
     depends_on:
-            - database
+      - database
 
   db:
     container_name: mysql_container
