@@ -8,6 +8,8 @@ services:
     tty: true
     volumes:
       - ./app:/go/app
+    depends_on:
+      - db
 
   migrate:
     container_name: "flyway_environment"
