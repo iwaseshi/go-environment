@@ -89,7 +89,7 @@ cd  ~/development/golang
 最後に本資源をcloneする。
 GitLab上の「クローン」を押下し、「HTTPSでクローン」の下部にあるURLをクリップボードにコピーする。
 
-![image-20210916153511602](https://gitlab.com/poc-private-only/go-poc/environment/-/raw/assets/typora-user-images/image-20210916153511602.png)
+![image-20210916153511602](https://github.com/iwaseatsuya/go-environment/blob/assets/typora-user-images/image-20210916153511602.png)
 
 コピー後、ターミナル上で以下のコマンドを入力する。
 
@@ -100,7 +100,7 @@ git clone {ここにコピーしたURLを貼り付ける}
 ※ユーザ名とパスワードを要求された場合、GitLabにサインした際に使用したユーザ名とパスワードを入力する。
 GoogleやGitHub等の連携認証を使用してサインインしていた場合は、その連携元のアプリのユーザ名とパスワードを使用する。
 
-![image-20210916154400721](https://gitlab.com/poc-private-only/go-poc/environment/-/raw/assets/typora-user-images/image-20210916154400721.png)
+![image-20210916154400721](https://github.com/iwaseatsuya/go-environment/blob/assets/typora-user-images/image-20210916154400721.png)
 
 ↑のような表示がされ、フォルダ内に本資源が存在していれば完了。
 
@@ -122,11 +122,11 @@ docker compose up -d --build
 
 ※初回はイメージファイルをダウンロードする都合、時間がかってしまう。
 
-![image-20210916155101581](https://gitlab.com/poc-private-only/go-poc/environment/-/raw/assets/typora-user-images/image-20210916155101581.png)
+![image-20210916155101581](https://github.com/iwaseatsuya/go-environment/blob/assets/typora-user-images/image-20210916155101581.png)
 
 ↑のような表示がされ、Dockerデスクトップ上でも「go_environment」と「mysql」がRUNNINGされていれば完了。
 
-![image-20210916155303159](https://gitlab.com/poc-private-only/go-poc/environment/-/raw/assets/typora-user-images/image-20210916155303159.png)
+![image-20210916155303159](https://github.com/iwaseatsuya/go-environment/blob/assets/typora-user-images/image-20210916155303159.png)
 
 
 
@@ -134,17 +134,17 @@ docker compose up -d --build
 
 VSCodeを起動し、左下にある緑色の箇所を押下する。
 
-![image-20210916155514497](https://gitlab.com/poc-private-only/go-poc/environment/-/raw/assets/typora-user-images/image-20210916155514497.png)
+![image-20210916155514497]([https://gitlab.com/poc-private-only/go-poc/environment/-/raw/assets](https://github.com/iwaseatsuya/go-environment/blob/assets)/typora-user-images/image-20210916155514497.png)
 
 **ここ↑**
 
 次にAttach to Running Containerの選択
 
-![image-20210916155821028](https://gitlab.com/poc-private-only/go-poc/environment/-/raw/assets/typora-user-images/image-20210916155821028.png)
+![image-20210916155821028](https://github.com/iwaseatsuya/go-environment/blob/assets/typora-user-images/image-20210916155821028.png)
 
 go_enviromentを選択
 
-![image-20210916155902167](https://gitlab.com/poc-private-only/go-poc/environment/-/raw/assets/typora-user-images/image-20210916155902167.png)
+![image-20210916155902167](https://github.com/iwaseatsuya/go-environment/blob/assets/typora-user-images/image-20210916155902167.png)
 
 VSCodeの新しいWindowが表示され、appディレクトリがカレントディレクトリとなっていることを確認する。
 
@@ -152,7 +152,7 @@ VSCodeの新しいWindowが表示され、appディレクトリがカレント�
 
 以下のようになっていれば完了。
 
-![image-20210916160119994](https://gitlab.com/poc-private-only/go-poc/environment/-/raw/assets/typora-user-images/image-20210916160119994.png)
+![image-20210916160119994](https://github.com/iwaseatsuya/go-environment/blob/assets/typora-user-images/image-20210916160119994.png)
 
 ↑コンテナ名が表示されいることを確認。
 
@@ -160,7 +160,7 @@ VSCodeの新しいWindowが表示され、appディレクトリがカレント�
 拡張機能の検索欄に `@recommended`と入力すれば、筆者の推奨する最低限の拡張機能が表示されるため、
 インストールすることを推奨する。
 
-![image-20210916160449829](https://gitlab.com/poc-private-only/go-poc/environment/-/raw/assets/typora-user-images/image-20210916160449829.png)
+![image-20210916160449829](https://github.com/iwaseatsuya/go-environment/blob/assets/typora-user-images/image-20210916160449829.png)
 
 
 
@@ -176,7 +176,7 @@ go run main.go
 
 ターミナル上に、`Environment building completed!`と書かれたアスキーアートが表示されれば、環境構築完了。
 
-また、コンテナが起動していれば、[VSCodeを起動したコンテナとつなげる](https://gitlab.com/poc-private-only/go-poc/environment#vscode%E3%82%92%E8%B5%B7%E5%8B%95%E3%81%97%E3%81%9F%E3%82%B3%E3%83%B3%E3%83%86%E3%83%8A%E3%81%A8%E3%81%A4%E3%81%AA%E3%81%92%E3%82%8B)の手順のみで再び同環境を利用できます。
+また、コンテナが起動していれば、[VSCodeを起動したコンテナとつなげる](https://github.com/iwaseatsuya/go-environment#vscodeを起動したコンテナとつなげる)の手順のみで再び同環境を利用できます。
 
 お疲れ様でした。
 
@@ -188,12 +188,12 @@ go run main.go
 
 開発を終えた際に、コンテナも終了させたい場合は以下の手順で行う。
 （STOPを選択し、押下）
-![image-20210916163956684](https://gitlab.com/poc-private-only/go-poc/environment/-/raw/assets/typora-user-images/image-20210916163956684.png)
+![image-20210916163956684](https://github.com/iwaseatsuya/go-environment/blob/assets/typora-user-images/image-20210916163956684.png)
 
 開発を再開する場合は再度コンテナを起動させる。
 （STARTを選択し、押下）
 
-![image-20210916162407898](https://gitlab.com/poc-private-only/go-poc/environment/-/raw/assets/typora-user-images/image-20210916162407898.png)
+![image-20210916162407898](https://github.com/iwaseatsuya/go-environment/blob/assets/typora-user-images/image-20210916162407898.png)
 
 
 
