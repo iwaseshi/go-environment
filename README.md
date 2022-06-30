@@ -134,7 +134,7 @@ docker compose up -d --build
 
 VSCodeを起動し、左下にある緑色の箇所を押下する。
 
-![image-20210916155514497]([https://gitlab.com/poc-private-only/go-poc/environment/-/raw/assets](https://github.com/iwaseatsuya/go-environment/blob/assets)/typora-user-images/image-20210916155514497.png)
+![image-20210916155514497](https://github.com/iwaseatsuya/go-environment/blob/assets/typora-user-images/image-20210916155514497.png)
 
 **ここ↑**
 
