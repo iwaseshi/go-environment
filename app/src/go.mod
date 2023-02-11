@@ -1,6 +1,6 @@
 module enviroment
 
-go 1.17
+go 1.20
 
 require (
 	gorm.io/driver/mysql v1.1.2

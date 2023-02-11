@@ -169,7 +169,11 @@ VSCodeの新しいWindowが表示され、appディレクトリがカレント�
 
 最後に本資源にあらかじめ同梱されているGolangのプログラムを実行し、起動確認を行う。
 
-appディレクトリの直下で以下を入力する。（VSCode上のターミナルでの実行で問題ない）
+appディレクトリの直下で以下を入力する。（remote containerで開いたVSCode上のターミナルで実行する）
+
+```
+cd /go/app/src
+```
 
 ```go
 go run main.go
