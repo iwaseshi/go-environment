@@ -1,8 +1,9 @@
-FROM golang:1.17
-
+FROM golang:1.20.0-buster
 ENV GO111MODULE on
 
 WORKDIR /go/app
+
+COPY ../app/src /go/app/
 
 RUN go get github.com/uudashr/gopkgs/v2/cmd/gopkgs \
     github.com/ramya-rao-a/go-outline \
